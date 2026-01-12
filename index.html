@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Access Bridgeは、視覚障がい者の移動の不安を解消し、誰もが自由に出かけられる社会を実現するナビゲーションアプリです。">
+    <title>Access Bridge - 誰もが取り残されない移動の自由を</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+    <header role="banner">
+        <div class="container header-inner">
+            <nav role="navigation" aria-label="メインメニュー">
+                <ul>
+                    <li><a href="#hero">ホーム</a></li>
+                    <li><a href="#problem">解決する課題</a></li>
+                    <li><a href="#features">機能・サービス</a></li>
+                    <li><a href="#mission">私たちの想い</a></li>
+                    <li><a href="#profile">自己紹介</a></li>
+                </ul>
+            </nav>
+            <div class="font-size-switcher" aria-label="文字サイズ変更">
+                <span>文字サイズ:</span>
+                <button onclick="setFontSize('normal')" class="active" aria-label="標準サイズ">標準</button>
+                <button onclick="setFontSize('large')" aria-label="大サイズ">大</button>
+                <button onclick="setFontSize('xlarge')" aria-label="特大サイズ">特大</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">誰もが取り残されない、<br>自由な移動を。</h1>
+                <p>
+                    視覚障がい者を起点に、誰もが取り残されない<br>
+                    移動の自由を実現します。
+                </p>
+                <img src="img/top.png" alt="白杖を持ったユーザーが、スマートフォンの音声ガイドを聞きながら笑顔で街を歩いている様子" width="800" height="400"
+                    class="img-placeholder" style="width: 100%; height: auto;">
+
+                <div style="margin-top: 30px;">
+                    <a href="#contact" class="btn">プロジェクトを詳しく見る</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem">
+            <div class="container">
+                <h2>なぜ今、必要なのか</h2>
+                <p>視覚障がい者の約4割が、移動への不安から外出を控えています。特にバスの利用は「乗り間違い」「降りる場所がわからない」といった恐怖がつきまといます。この「閉じこもり」は、要介護リスクを高めるだけでなく、社会参加の機会を奪っています。
+                </p>
+
+                <img src="img/top-2.png" alt="グラフのイメージ図：視覚障がい者の外出頻度の低さと、それに伴う健康リスクの上昇を示した図" width="800" height="400"
+                    class="img-placeholder" style="width: 100%; height: auto;">
+            </div>
+        </section>
+
+        <section id="features" style="background-color: var(--light-bg-color);">
+            <div class="container">
+                <h2>Access Bridgeでできること</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3>1. 正確なバス乗降支援</h3>
+                        <img src="img/feature-1.png" alt="アプリ画面：バスの到着時刻と正確な停車位置を音声で知らせている様子" width="100%" height="auto"
+                            class="img-placeholder">
+                        <p>アプリとセンサーが連携し、バスの正確な停車位置へ誘導。乗るべきバスが来たこと、そして降りるべきバス停を音声で確実に伝えます。</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>2. 外出したくなる提案</h3>
+                        <img src="img/feature-2.png" alt=" アプリ画面：ユーザーの興味に基づいたおすすめの外出スポットが表示されている様子" width="100%"
+                            height="auto" class="img-placeholder">
+                        <p>興味・関心に合わせたスポットをレコメンド。単なる移動手段だけでなく、「出かけたい」という意欲を創出します。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="container">
+                <h2>私たちの想い</h2>
+                <div class="mission-text">
+                    <p>
+                        「誰もが取り残されない社会を創りたい。<br>
+                        "取り残される"という経験を、誰もがしない社会へ。<br>
+                        Access Bridgeは、テクノロジーと社会の架け橋となり、<br>
+                        全ての人が自由に移動できる未来を実現します。」
+                    </p>
+                </div>
+                <p style="text-align: center; margin-top: 20px;">
+                    この強い想いを胸に、私たちは持続可能な事業として<br>
+                    社会課題の解決に挑み続けます。
+                </p>
+            </div>
+        </section>
+
+        <section id="profile">
+            <div class="container">
+                <h2>自己紹介</h2>
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="img/profile.jpg" alt="田頭潤の顔写真">
+                    </div>
+                    <div class="profile-content">
+                        <h3>
+                            田頭 潤 (Jun Tagashira)
+                            <a href="https://www.facebook.com/profile.php?id=100009889067611&locale=ja_JP"
+                                target="_blank" rel="noopener noreferrer">
+                                Facebook Profile
+                            </a>
+                        </h3>
+                        <span class="profile-role">フルスタックエンジニア / 新規事業開発</span>
+                        <p>
+                            インフラからアプリまで、フルスタックで開発できるITエンジニア。<br>
+                            新規事業推進と生成AI活用の経験を活かし、技術とビジネスの両面から課題解決を実現します。
+                        </p>
+                        <div class="award">
+                            ソーシャルビジネスプランコンペ edge2025 ファイナリスト
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="text-align: center;">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <p>本プロジェクトへのご意見、協業のご相談はお気軽にご連絡ください。</p>
+                <div class="contact-email">
+                    Email: <a href="mailto:accessbridge.app@gmail.com">accessbridge.app@gmail.com</a>
+                </div>
+                <a href="mailto:accessbridge.app@gmail.com" class="btn">お問い合わせはこちら</a>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 Access Bridge Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function setFontSize(size) {
+            document.body.classList.remove('text-large', 'text-xlarge');
+            if (size === 'large') {
+                document.body.classList.add('text-large');
+            } else if (size === 'xlarge') {
+                document.body.classList.add('text-xlarge');
+            }
+
+            // Generate active state for buttons
+            const buttons = document.querySelectorAll('.font-size-switcher button');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                // Simple logic based on onclick attribute content match or just index would need better logic but for this MVP:
+                if (btn.getAttribute('onclick').includes(`'${size}'`)) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
