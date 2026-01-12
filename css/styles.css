@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+/* --- Base & Accessibility --- */
+:root {
+    --main-color: #0056b3;
+    --accent-color: #d64500;
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --light-bg-color: #f4f7f9;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.8;
+    margin: 0;
+    font-size: 112.5%;
+    transition: font-size 0.3s ease;
+}
+
+body.text-large {
+    font-size: 150%;
+}
+
+body.text-xlarge {
+    font-size: 200%;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    background: var(--main-color);
+    color: white;
+    padding: 10px 15px;
+    z-index: 9999;
+    text-decoration: none;
+    font-weight: bold;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus States */
+a:focus,
+button:focus,
+input:focus,
+.btn:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* --- Layout --- */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+nav a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* --- Component: Font Size Switcher --- */
+.font-size-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.font-size-switcher span {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.font-size-switcher button {
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.font-size-switcher button:hover {
+    background: #ddd;
+}
+
+.font-size-switcher button.active {
+    background: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--light-bg-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.1s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004494;
+    text-decoration: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* --- Images --- */
+.img-placeholder {
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-weight: bold;
+    margin: 30px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* --- Sections --- */
+section {
+    padding: 80px 0;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 50px 0;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    border-left: 10px solid var(--main-color);
+    padding-left: 15px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.6rem;
+        border-left-width: 6px;
+    }
+}
+
+/* --- Features Grid --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feature-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    color: var(--main-color);
+    margin-top: 0;
+}
+
+/* --- Mission --- */
+#mission .mission-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #eef4fb;
+    padding: 50px;
+    border-radius: 16px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    #mission .mission-text {
+        padding: 30px 20px;
+        font-size: 1.1rem;
+    }
+}
+
+/* --- Profile --- */
+.profile-card {
+    display: flex;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+    }
+}
+
+.profile-card .profile-image {
+    flex: 0 0 250px;
+    background: #ddd;
+}
+
+.profile-card .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-card .profile-content {
+    padding: 30px;
+    flex: 1;
+}
+
+.profile-card .profile-content h3 {
+    margin-top: 0;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-card .profile-content h3 a {
+    font-size: 0.9rem;
+    color: #3b5998;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.profile-card .profile-content .profile-role {
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    color: #666;
+}
+
+.profile-card .profile-content .award {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* --- Contact --- */
+#contact {
+    text-align: center;
+    background-color: var(--light-bg-color);
+}
+
+.contact-email {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.contact-email a {
+    color: var(--main-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
