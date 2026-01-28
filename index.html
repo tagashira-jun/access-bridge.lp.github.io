@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Access Bridgeは、視覚障がい者の移動の不安を解消し、誰もが自由に出かけられる社会を実現するナビゲーションアプリです。">
+    <meta name="description" content="Access Bridgeは、視覚障がい者の視点から誰もがバス利用をしやすくなるインクルーシブサービスです。高齢者、外国人、初めての場所を訪れる人など、すべての人に便利なバス移動支援アプリです。">
     <title>Access Bridge - 誰もが取り残されない移動の自由を</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -19,7 +19,8 @@
                 <ul>
                     <li><a href="#hero">ホーム</a></li>
                     <li><a href="#problem">解決する課題</a></li>
-                    <li><a href="#features">機能・サービス</a></li>
+                    <li><a href="#approach">解決へのアプローチ</a></li>
+                    <li><a href="#impact">どうよくなるのか</a></li>
                     <li><a href="#mission">私たちの想い</a></li>
                     <li><a href="#profile">自己紹介</a></li>
                 </ul>
@@ -37,9 +38,14 @@
         <section id="hero" class="hero" aria-labelledby="hero-title">
             <div class="container">
                 <h1 id="hero-title">誰もが取り残されない、<br>バス移動支援スマホアプリ</h1>
-                <p>
-                    視覚障がい者を起点に、誰もが使いやすいUIで<br>
-                    自由な移動を実現します。
+                <p style="font-size: 1.2rem; line-height: 1.8; max-width: 900px; margin: 0 auto;">
+                    <strong style="font-size: 1.3em; color: var(--main-color); display: block; margin-bottom: 20px;">
+                        視覚障がい者の視点から、誰もがバス利用をしやすくなる<br>
+                        インクルーシブサービス
+                    </strong>
+                    Access Bridgeは、視覚障がい者の視点を起点に設計された、<br>
+                    高齢者、外国人、初めての場所を訪れる人など、<strong>すべての人にとって</strong><br>
+                    バス利用をしやすくするサービスです。
                 </p>
                 <img src="img/top.png" alt="白杖を持ったユーザーが、Access Bridgeアプリを使いながら笑顔で街を歩いている様子" width="800" height="400"
                     class="img-placeholder" style="width: 100%; height: auto;">
@@ -52,31 +58,127 @@
 
         <section id="problem">
             <div class="container">
-                <h2>なぜ今、必要なのか</h2>
-                <p>視覚障がい者の約4割が、移動への不安から外出を控えています。特にバスの利用は「乗り間違い」「降りる場所がわからない」といった恐怖がつきまといます。この「閉じこもり」は、要介護リスクを高めるだけでなく、社会参加の機会を奪っています。
-                </p>
+                <h2>誰の、どのような課題を解決するのか</h2>
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div style="margin-bottom: 50px;">
+                        <h3 style="font-size: 1.5rem; color: var(--main-color); margin-bottom: 25px; text-align: center;">視覚障がい者の方々</h3>
+                        <div style="background-color: #f9f9f9; padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+                            <h4 style="font-size: 1.2rem; margin-bottom: 15px; color: #333;">徒歩移動の大きな負担</h4>
+                            <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 15px;">
+                                視覚障がい者の方が徒歩で移動する際は、白杖や歩行訓練を通じて得られた音、匂い、傾斜、質感（点字ブロック等）などの「具体的なランドマーク」を記憶し、頭の中で空間構成をイメージする「メンタルマップ（心の地図）」を意識する必要があります。この状況把握とメンタルマップの構築は、常に大きな負担となっています。
+                            </p>
+                            <h4 style="font-size: 1.2rem; margin: 20px 0 15px; color: #333;">バス利用への不安</h4>
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                バス移動への転換で負担を減らすことができますが、バス停の位置が分からない、利用可能な路線・到着時刻が分からない、バス到着の把握が難しい、降車タイミングが分からないなどの課題があり、視覚障がい者の約4割が移動への不安から外出を控えていると言われております。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 50px;">
+                        <h3 style="font-size: 1.5rem; color: var(--main-color); margin-bottom: 25px; text-align: center;">高齢者の方々</h3>
+                        <div style="background-color: #f9f9f9; padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                スマートフォン操作が苦手、小さな文字が見えにくい、バス停の位置や到着時刻が分かりにくいなどの課題により、バス利用を敬遠してしまう方が多くいらっしゃいます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 50px;">
+                        <h3 style="font-size: 1.5rem; color: var(--main-color); margin-bottom: 25px; text-align: center;">外国人の方々</h3>
+                        <div style="background-color: #f9f9f9; padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                日本語が不慣れ、路線や行先の表示が理解しにくい、バス停の位置が分からないなどの課題により、バス利用に不安を感じる方が多くいらっしゃいます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 1.5rem; color: var(--main-color); margin-bottom: 25px; text-align: center;">初めての場所を訪れる方々</h3>
+                        <div style="background-color: #f9f9f9; padding: 30px; border-radius: 12px;">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                バス停の位置が分からない、どの路線に乗ればよいか分からない、乗り過ごしてしまう不安など、初めての場所でのバス利用に課題を感じる方が多くいらっしゃいます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <img src="img/top-2.png" alt="グラフのイメージ図：視覚障がい者の外出頻度の低さと、それに伴う健康リスクの上昇を示した図" width="800" height="400"
-                    class="img-placeholder" style="width: 100%; height: auto;">
+                    class="img-placeholder" style="width: 100%; height: auto; margin-top: 50px;">
             </div>
         </section>
 
-        <section id="features" style="background-color: var(--light-bg-color);">
+        <section id="approach" style="background-color: var(--light-bg-color);">
             <div class="container">
-                <h2>Access Bridgeでできること</h2>
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <h3>1. 正確なバス乗降支援</h3>
-                        <img src="img/feature-1.png" alt="アプリ画面：バスの到着時刻と正確な停車位置を音声で知らせている様子" width="100%" height="auto"
-                            class="img-placeholder">
-                        <p>アプリとセンサーが連携し、バスの正確な停車位置へ誘導。乗るべきバスが来たこと、そして降りるべきバス停を音声で確実に伝えます。</p>
-                    </article>
-                    <article class="feature-card">
-                        <h3>2. 外出したくなる提案</h3>
-                        <img src="img/feature-2.png" alt=" アプリ画面：ユーザーの興味に基づいたおすすめの外出スポットが表示されている様子" width="100%"
-                            height="auto" class="img-placeholder">
-                        <p>興味・関心に合わせたスポットをレコメンド。単なる移動手段だけでなく、「出かけたい」という意欲を創出します。</p>
-                    </article>
+                <h2>どのようなアプローチで解決を目指すのか</h2>
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div style="margin-bottom: 40px;">
+                        <h3 style="font-size: 1.4rem; color: var(--main-color); margin-bottom: 20px; text-align: center;">1. 視覚障がい者の視点から設計</h3>
+                        <div style="background-color: #fff; padding: 30px; border-radius: 12px; border-left: 5px solid var(--main-color);">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                最も厳しい条件である視覚障がい者の視点を起点に設計することで、<strong>誰もが使いやすいインクルーシブサービス</strong>を実現します。音声・触覚・視覚の3つのフィードバックを組み合わせ、状況に応じた最適な情報提供を行います。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 40px;">
+                        <h3 style="font-size: 1.4rem; color: var(--main-color); margin-bottom: 20px; text-align: center;">2. 徒歩移動からバス移動への転換</h3>
+                        <div style="background-color: #fff; padding: 30px; border-radius: 12px; border-left: 5px solid var(--main-color);">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                徒歩移動におけるメンタルマップ（心の地図）の構築という大きな負担を、バス移動への転換によって減らします。バス利用のリスクを無くし、利用しやすい状況を作ることで、移動の負担を大幅に軽減します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 40px;">
+                        <h3 style="font-size: 1.4rem; color: var(--main-color); margin-bottom: 20px; text-align: center;">3. バス利用の全行程をサポート</h3>
+                        <div style="background-color: #fff; padding: 30px; border-radius: 12px; border-left: 5px solid var(--main-color);">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                バス停検索から降車まで、バス利用の全行程をサポートします。バス停の位置案内、路線・行先の選択、到着通知、乗車中案内など、不安を感じるすべての場面で支援を提供します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--main-color); margin-bottom: 20px; text-align: center;">4. 移動しやすい都市・環境作りを目指す</h3>
+                        <div style="background-color: #fff; padding: 30px; border-radius: 12px; border-left: 5px solid var(--main-color);">
+                            <p style="font-size: 1.1rem; line-height: 1.9;">
+                                単なるアプリ開発ではなく、<strong>移動しやすい都市や環境作り</strong>という、より大きな社会インフラの構築を目指します。誰もが自由に移動できる社会の実現に向けて、持続可能な事業として社会課題の解決に取り組みます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact">
+            <div class="container">
+                <h2>どうよくなるのか</h2>
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="features-grid" style="margin-bottom: 40px;">
+                        <article class="feature-card" style="background-color: #f0f7ff; border-left: 5px solid var(--main-color);">
+                            <h3>移動の負担が大幅に軽減</h3>
+                            <p>徒歩移動におけるメンタルマップの構築という負担から解放され、バス移動により快適に移動できるようになります。バス利用の不安が解消され、外出への心理的ハードルが下がります。</p>
+                        </article>
+                        <article class="feature-card" style="background-color: #f0f7ff; border-left: 5px solid var(--main-color);">
+                            <h3>社会参加の機会が広がる</h3>
+                            <p>「閉じこもり」を防ぎ、外出頻度が向上します。これにより、要介護リスクの低減だけでなく、就労、趣味、人との交流など、社会参加の機会が広がります。</p>
+                        </article>
+                        <article class="feature-card" style="background-color: #f0f7ff; border-left: 5px solid var(--main-color);">
+                            <h3>誰もがバス利用をしやすくなる</h3>
+                            <p>視覚障がい者の視点から設計されたサービスにより、高齢者、外国人、初めての場所を訪れる人など、すべての人にとってバス利用がしやすくなります。</p>
+                        </article>
+                        <article class="feature-card" style="background-color: #f0f7ff; border-left: 5px solid var(--main-color);">
+                            <h3>移動しやすい都市・環境の実現</h3>
+                            <p>移動の負担を減らし、誰もが自由に移動できる社会の実現に向けて、移動しやすい都市や環境作りという、より大きな社会インフラの構築につながります。</p>
+                        </article>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background-color: #f9f9f9; border-radius: 12px;">
+                        <p style="font-size: 1.2rem; line-height: 1.9; margin: 0;">
+                            <strong>Access Bridgeは、視覚障がい者の視点から、誰もがバス利用をしやすくなるインクルーシブサービスとして、</strong><br>
+                            移動の負担を減らし、社会参加の機会を広げ、<br>
+                            <strong>移動しやすい都市や環境作りを目指します。</strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,6 +192,12 @@
                         "取り残される"という経験を、誰もがしない社会へ。<br>
                         Access Bridgeは、テクノロジーと社会の架け橋となり、<br>
                         全ての人が自由に移動できる未来を実現します。」
+                    </p>
+                </div>
+                <div style="max-width: 800px; margin: 30px auto; padding: 25px; background-color: #f9f9f9; border-radius: 8px;">
+                    <p style="font-size: 1.1rem; line-height: 1.9; margin: 0;">
+                        <strong>視覚障がい者の視点から、誰もがバス利用をしやすくなるインクルーシブサービス</strong><br>
+                        Access Bridgeは、視覚障がい者の視点を起点に設計された、誰もがバス利用をしやすくなるインクルーシブサービスです。高齢者、外国人、初めての場所を訪れる人など、すべての人にとって便利なサービスを目指しています。徒歩移動におけるメンタルマップの負担を、バス移動への転換によって減らす。そのために、バス利用のリスクを無くし、利用しやすい状況を作る。これがAccess Bridgeの使命です。私たちは、単なるアプリ開発ではなく、<strong>移動しやすい都市や環境作り</strong>という、より大きな社会インフラの構築を目指しています。
                     </p>
                 </div>
                 <p style="text-align: center; margin-top: 20px;">
